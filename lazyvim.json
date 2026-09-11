@@ -2,8 +2,7 @@
   "extras": [
     "lazyvim.plugins.extras.lang.markdown",
     "lazyvim.plugins.extras.lang.r",
-    "lazyvim.plugins.extras.lang.tex",
-    "lazyvim.plugins.extras.util.gitui"
+    "lazyvim.plugins.extras.lang.tex"
   ],
   "install_version": 8,
   "news": {
