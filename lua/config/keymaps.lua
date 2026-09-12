@@ -28,5 +28,6 @@ map("n", "<D-Z>", "<C-r>", { desc = "Redo" })
 map("i", "<D-Z>", "<cmd>redo<cr>", { desc = "Redo insert" })
 
 -- I want commenting
+map("i", "<D-/>", "<Esc>gcci", { remap = true, desc = "Toggle comment even in insert mode" })
 map("n", "<D-/>", "gcc", { remap = true, desc = "Toggle comment line" })
 map("v", "<D-/>", "gc", { remap = true, desc = "Toggle comment selection" })

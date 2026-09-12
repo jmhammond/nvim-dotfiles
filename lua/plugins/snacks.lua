@@ -24,7 +24,10 @@ return {
     {
       "<leader>bb",
       function()
-        Snacks.picker.buffers()
+        Snacks.picker.buffers({
+          sort_lastused = true,
+          current = false,
+        })
       end,
       desc = "Buffers",
     },
