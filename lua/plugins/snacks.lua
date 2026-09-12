@@ -16,4 +16,17 @@ return {
       },
     },
   },
+  keys = {
+    -- Disable the default <leader>, keymap
+    { "<leader>,", false },
+
+    -- Map <leader>bb to open the buffer picker; this matches my doom or spacemacs experience.
+    {
+      "<leader>bb",
+      function()
+        Snacks.picker.buffers()
+      end,
+      desc = "Buffers",
+    },
+  },
 }
