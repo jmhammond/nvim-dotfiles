@@ -31,3 +31,6 @@ map("i", "<D-Z>", "<cmd>redo<cr>", { desc = "Redo insert" })
 map("i", "<D-/>", "<Esc>gcci", { remap = true, desc = "Toggle comment even in insert mode" })
 map("n", "<D-/>", "gcc", { remap = true, desc = "Toggle comment line" })
 map("v", "<D-/>", "gc", { remap = true, desc = "Toggle comment selection" })
+
+-- Map Esc to drop into Normal mode inside the terminal
+vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
