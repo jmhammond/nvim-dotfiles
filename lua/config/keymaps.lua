@@ -23,6 +23,11 @@ map("n", "<D-z>", "u", { desc = "Undo" })
 map("v", "<D-z>", "<Esc>u", { desc = "Undo visual" })
 map("i", "<D-z>", "<cmd>undo<cr>", { desc = "Undo insert" })
 
+-- Cmd+S is save in all modes
+map("n", "<D-s>", "<Esc>:w<CR>", { desc = "Save" })
+map("i", "<D-s>", "<Esc>:w<CR>a", { desc = "Save" })
+map("v", "<D-s>", "<Esc>:w<CR>", { desc = "Save" })
+
 -- Cmd+Shift+Z (Redo in all modes)
 map("n", "<D-Z>", "<C-r>", { desc = "Redo" })
 map("i", "<D-Z>", "<cmd>redo<cr>", { desc = "Redo insert" })
